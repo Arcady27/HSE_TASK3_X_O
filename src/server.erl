@@ -1,7 +1,7 @@
 -module(server).
 -define(SERVER, ?MODULE).
 -define(LINK, {global, ?SERVER}).
--behaviour(gen_server).
+%-behaviour(gen_server).
 -export([start/0, getPlayers/3, getSymbols/3, join/3, leave/3, getField/3, makeTurn/3, reset/3, getWinner/3]).
 -define(LOGIC, {global, logic}).
 ct_string(json) -> "Content-type: application/json\r\n\r\n";

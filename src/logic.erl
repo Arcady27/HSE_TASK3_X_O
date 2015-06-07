@@ -1,5 +1,5 @@
 -module(logic).
--behaviour(gen_server).
+%-behaviour(gen_server).
 -export([terminate/2,init/1, start_link/0, handle_call/3, handle_cast/2]).
 -export([checkTurn/4, getWinner/1, addPlayer/2,getPlayers/1, getSymbols/1,verifyCell/3,start_game/0,leave_game/2, diff/2, del_nth_from_list/2 ]).
 -record(situation, {players = queue:new(), symbols = queue:new(), winner=no, field = dict:new()}).
