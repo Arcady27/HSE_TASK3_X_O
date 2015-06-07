@@ -6,6 +6,7 @@ $(document).ready(function() {
     var players = [];
     var symbols = [];
     create_field();
+    $("#button").attr('status','join');
     setInterval(update_players,500);
     setInterval(update_field,500);
 
