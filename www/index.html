@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>5 IN A ROW</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="frontend.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link href="bootstrap.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <h1>5 IN A ROW</h1>
+    <!--input id="thereshold" type="text" onchange="load_data(this.value)" value="0.0"-->
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3" id="block">
+                <div>
+                    <div>
+                        <fieldset>
+                            <legend>Авторизация</legend>
+                            <input type="text" id="name" placeholder="Введите имя игрока">
+                            <button status="join" id="button" class="button-my pure-button">Начать игру</button>
+                        </fieldset>
+                    </div>
+                    <h4>Сейчас играют:</h4>
+                    <ul id="list">
+                    </ul>
+                </div>
+
+            </div>
+            <div class="span9" id="container">
+                <table id="table">
+                    <tbody>
+                        <tr>
+                            <td id="field"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<div>
+    <style scoped>
+
+        .button-my,
+
+
+        .button-my {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+
+
+    </style>
+</div>
